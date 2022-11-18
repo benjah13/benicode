@@ -21,6 +21,7 @@ export default function Header() {
     { path: "/", name: t("home") },
     { path: "/about", name: t("about") },
     { path: "/career", name: t("career") },
+    { path: "/posts", name: t("posts") },
     { path: "/contact", name: t("contact") },
   ];
 

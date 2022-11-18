@@ -2,6 +2,23 @@
   "home": "Home",
   "career": "Career",
   "about": "About",
+  "posts": "Posts",
   "contact": "Contact",
-  "herosub": "Not your regular software engineer."
+  "herosub": "Not your regular software engineer.",
+  "readMore": "Read it!",
+  "postPageDescription": "Big fan of Tech, i try to improve daily, and share what i learn. Please find below some articles that I wrote on those subjects : ",
+  "englishSorry": "(Sorry for my English readers, those articles are written in French 🇫🇷)",
+  "education": {
+    "sicom": {
+      "title": "Engineering Degree on Signal, Image processing, Communication and Multimedia",
+      "establisment": "Grenoble INP - Ense3, France",
+      "description": "Signal Image Communication Multimedia (SICOM) offers you a two years cursus, jointly performed by Phelma and Ense3, to prepare a high level engineer degree in both information System, Communication and Signal / Image / Multimedia. Students will receive an Engineer Degree from the Grenoble Institute of Technology, and a master degree.",
+      "grade": "'Very Good'"
+    },
+    "glasgow": {
+      "title": "Exchange Semester in Erasmus Program in computer science and signal processing",
+      "establisment": "University of Glasgow, Scotland, UK",
+      "description": "I took part in the Erasmus program in the University of Glasgow, Scotland, UK. I took courses in computer science and signal processing."
+    }
+  }
 }

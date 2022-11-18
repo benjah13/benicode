@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import Header from "../components/Header";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 type EducationItem = {
   title: string;
@@ -8,6 +9,7 @@ type EducationItem = {
   establishment: string;
   firstYear: number;
   lastYear: number;
+  grade?: string;
 };
 
 const makeEducationItem = (
@@ -15,44 +17,34 @@ const makeEducationItem = (
   description: string,
   establishment: string,
   firstYear: number,
-  lastYear: number
+  lastYear: number,
+  grade?: string
 ): EducationItem => ({
   title,
   description,
   establishment,
   firstYear,
   lastYear,
+  grade,
 });
 
 export default function About() {
+  const { t } = useTranslation();
   const educationItems: EducationItem[] = [
     makeEducationItem(
-      "Bachelor of Science in Computer Science",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores culpa, amet quidem vero ipsum distinctio nam error rerum! Nobis, facere dignissimos saepe rem voluptas enim debitis alias ratione voluptatem vitae, totam aut possimus non ipsam eos repellat accusamus iure veritatis tempore similique! Alias debitis quisquam, reprehenderit, praesentium ut suscipit tempora magni atque architecto, aperiam illum? Magnam ea, repudiandae quaerat tenetur sequi harum omnis sed quae nostrum eaque aspernatur neque hic porro beatae quidem repellendus modi quos officiis alias incidunt delectus eligendi dolore. Earum et repudiandae architecto illum ducimus iure culpa quod quasi delectus nulla. Ipsam ipsa magni mollitia sapiente tenetur rerum natus quis officiis nam, vitae iste, hic minus accusamus! Dicta non vel molestias repudiandae natus earum rerum cupiditate explicabo, in labore, similique necessitatibus veniam est sed ipsam aspernatur laboriosam temporibus eius inventore. Voluptatum fugiat blanditiis, assumenda nemo eos molestiae sapiente aliquam? Ipsum quis inventore at dolorem iusto ad! Voluptatem nobis explicabo distinctio asperiores deserunt quibusdam atque sit laboriosam, molestias porro rem nemo nihil, perspiciatis repellendus earum dolorum quaerat assumenda dicta consectetur laborum aperiam. Reprehenderit voluptatum molestiae at, aperiam optio vitae minus id vero vel autem in atque iure cumque? Rem repudiandae vel deserunt modi alias et debitis dolor exercitationem.",
-      "University of the Philippines Diliman",
-      2016,
-      2020
-    ),
-    makeEducationItem(
-      "High School",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores culpa, amet quidem vero ipsum distinctio nam error rerum! Nobis, facere dignissimos saepe rem voluptas enim debitis alias ratione voluptatem vitae, totam aut possimus non ipsam eos repellat accusamus iure veritatis tempore similique! Alias debitis quisquam, reprehenderit, praesentium ut suscipit tempora magni atque architecto, aperiam illum? Magnam ea, repudiandae quaerat tenetur sequi harum omnis sed quae nostrum eaque aspernatur neque hic porro beatae quidem repellendus modi quos officiis alias incidunt delectus eligendi dolore. Earum et repudiandae architecto illum ducimus iure culpa quod quasi delectus nulla. Ipsam ipsa magni mollitia sapiente tenetur rerum natus quis officiis nam, vitae iste, hic minus accusamus! Dicta non vel molestias repudiandae natus earum rerum cupiditate explicabo, in labore, similique necessitatibus veniam est sed ipsam aspernatur laboriosam temporibus eius inventore. Voluptatum fugiat blanditiis, assumenda nemo eos molestiae sapiente aliquam? Ipsum quis inventore at dolorem iusto ad! Voluptatem nobis explicabo distinctio asperiores deserunt quibusdam atque sit laboriosam, molestias porro rem nemo nihil, perspiciatis repellendus earum dolorum quaerat assumenda dicta consectetur laborum aperiam. Reprehenderit voluptatum molestiae at, aperiam optio vitae minus id vero vel autem in atque iure cumque? Rem repudiandae vel deserunt modi alias et debitis dolor exercitationem.",
-      "University of the Philippines Diliman",
+      t("education.sicom.title"),
+      t("education.sicom.description"),
+      t("education.sicom.establishment"),
       2012,
-      2016
+      2015,
+      t("education.sicom.grade")
     ),
     makeEducationItem(
-      "Elementary School",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores culpa, amet quidem vero ipsum distinctio nam error rerum! Nobis, facere dignissimos saepe rem voluptas enim debitis alias ratione voluptatem vitae, totam aut possimus non ipsam eos repellat accusamus iure veritatis tempore similique! Alias debitis quisquam, reprehenderit, praesentium ut suscipit tempora magni atque architecto, aperiam illum? Magnam ea, repudiandae quaerat tenetur sequi harum omnis sed quae nostrum eaque aspernatur neque hic porro beatae quidem repellendus modi quos officiis alias incidunt delectus eligendi dolore. Earum et repudiandae architecto illum ducimus iure culpa quod quasi delectus nulla. Ipsam ipsa magni mollitia sapiente tenetur rerum natus quis officiis nam, vitae iste, hic minus accusamus! Dicta non vel molestias repudiandae natus earum rerum cupiditate explicabo, in labore, similique necessitatibus veniam est sed ipsam aspernatur laboriosam temporibus eius inventore. Voluptatum fugiat blanditiis, assumenda nemo eos molestiae sapiente aliquam? Ipsum quis inventore at dolorem iusto ad! Voluptatem nobis explicabo distinctio asperiores deserunt quibusdam atque sit laboriosam, molestias porro rem nemo nihil, perspiciatis repellendus earum dolorum quaerat assumenda dicta consectetur laborum aperiam. Reprehenderit voluptatum molestiae at, aperiam optio vitae minus id vero vel autem in atque iure cumque? Rem repudiandae vel deserunt modi alias et debitis dolor exercitationem.",
-      "University of the Philippines Diliman",
-      2006,
-      2012
-    ),
-    makeEducationItem(
-      "Pre-School",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores culpa, amet quidem vero ipsum distinctio nam error rerum! Nobis, facere dignissimos saepe rem voluptas enim debitis alias ratione voluptatem vitae, totam aut possimus non ipsam eos repellat accusamus iure veritatis tempore similique! Alias debitis quisquam, reprehenderit, praesentium ut suscipit tempora magni atque architecto, aperiam illum? Magnam ea, repudiandae quaerat tenetur sequi harum omnis sed quae nostrum eaque aspernatur neque hic porro beatae quidem repellendus modi quos officiis alias incidunt delectus eligendi dolore. Earum et repudiandae architecto illum ducimus iure culpa quod quasi delectus nulla. Ipsam ipsa magni mollitia sapiente tenetur rerum natus quis officiis nam, vitae iste, hic minus accusamus! Dicta non vel molestias repudiandae natus earum rerum cupiditate explicabo, in labore, similique necessitatibus veniam est sed ipsam aspernatur laboriosam temporibus eius inventore. Voluptatum fugiat blanditiis, assumenda nemo eos molestiae sapiente aliquam? Ipsum quis inventore at dolorem iusto ad! Voluptatem nobis explicabo distinctio asperiores deserunt quibusdam atque sit laboriosam, molestias porro rem nemo nihil, perspiciatis repellendus earum dolorum quaerat assumenda dicta consectetur laborum aperiam. Reprehenderit voluptatum molestiae at, aperiam optio vitae minus id vero vel autem in atque iure cumque? Rem repudiandae vel deserunt modi alias et debitis dolor exercitationem.",
-      "Major in Science",
-      2000,
-      2025
+      t("education.glasgow.title"),
+      t("education.glasgow.description"),
+      t("education.glasgow.establishment"),
+      2014,
+      2014
     ),
   ];
 
@@ -86,12 +78,14 @@ export default function About() {
               </span>
               <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
                 {item.title}
-                <span className="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
-                  Latest
-                </span>
               </h3>
               <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                 {item.firstYear} - {item.lastYear}
+                {item.grade && (
+                  <span className="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
+                    {item.grade}
+                  </span>
+                )}
               </time>
               <p className="mb-4 max-w-xl text-base font-normal text-gray-500 dark:text-gray-400">
                 {item.description}

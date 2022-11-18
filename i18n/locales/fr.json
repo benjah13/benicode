@@ -2,6 +2,23 @@
   "home": "Acceuil",
   "career": "Carrière",
   "about": "A propos",
+  "posts": "Articles",
   "contact": "Contact",
-  "herosub": "Pas n'importe quel software engineer."
+  "herosub": "Pas n'importe quel software engineer.",
+  "readMore": "Lis-le!",
+  "postPageDescription": "Etant passioné par la Tech, j'essaye de progresser au quotidien, et de partager ce que j'apprends. J'ai donc pu écrire certains articles que voici: ",
+  "englishSorry": "(Sorry for my English readers, those articles are written in French 🇫🇷)",
+  "education": {
+    "sicom": {
+      "title": "Diplôme d'ingénieur Signal, Image, Communication et Multimédia",
+      "establisment": "Grenoble INP - Ense3: Ecole Nationale Supérieure de l'eau, l'énergie et l'environnement",
+      "description": "L’omniprésence des données numériques provoque actuellement une transformation de fond de la majorité des secteurs professionnels de notre société. Les nouvelles problématiques liées au traitement, à l’analyse et à l’interprétation de grandes quantités de données dans les secteurs de l’environnement, de l’énergie, de la santé ou encore du multimédia et des télécommunications n’en sont que des exemples parmi d’autres. La filière SICOM forme des ingénieurs maitrisant la science des données du capteur jusqu’à la prise de décision.",
+      "grade": "Mention Très bien"
+    },
+    "glasgow": {
+      "title": "Semestre d'échange en informatique et traitement du signal",
+      "establisment": "University of Glasgow, Ecosse, Royaume-Uni",
+      "description": "J'ai pu suivre des cours d'informatique et de traitement du signal au sein de cette université"
+    }
+  }
 }
