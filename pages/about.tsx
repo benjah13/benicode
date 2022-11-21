@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="bg-background w-full h-screen">
       <Header />
-      <div className="w-full h-full flex items-center justify-center font-bold uppercase text-white">
+      <div className="w-full h-full flex items-center justify-center font-bold uppercase ">
         About
       </div>
     </div>

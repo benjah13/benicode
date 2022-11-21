@@ -11,7 +11,7 @@ type NavBarItem = {
   name: string;
 };
 
-export default function Header() {
+export default function Header({ className }: { className?: string }) {
   const [navbar, setNavbar] = useState(false);
 
   const { t } = useTranslation();
@@ -26,15 +26,15 @@ export default function Header() {
   ];
 
   return (
-    <nav className="w-full bg-header shadow">
-      <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+    <nav className={classNames("w-full bg-white ", className)}>
+      <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 z-10">
         <div>
           <div className="flex flex-row items-center justify-between py-3 md:py-5 md:block">
-            <h2 className="text-2xl font-bold text-white">BeniCode</h2>
+            <h2 className="text-2xl font-bold text">BeniCode</h2>
 
             <div className="md:hidden">
               <button
-                className="p-2 text-white rounded-md outline-none"
+                className="p-2 text rounded-md outline-none"
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
@@ -84,7 +84,7 @@ export default function Header() {
                     <li
                       key={item.path}
                       className={classNames(
-                        "relative text-white hover:text-lightBlue",
+                        "relative text hover:text-lightBlue",
                         router.pathname == item.path ? "text-lightBlue" : ""
                       )}
                     >

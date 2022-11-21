@@ -17,6 +17,11 @@
   dependencies:
     regenerator-runtime "^0.13.10"
 
+"@csstools/convert-colors@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-2.0.0.tgz#6dd323583b40cfe05aaaca30debbb30f26742bbf"
+  integrity sha512-P7BVvddsP2Wl5v3drJ3ArzpdfXMqoZ/oHOV/yFiGFb3JQr9Z9UXZ9tnHAKJsO89lfprR1F9ExW3Yij21EjEBIA==
+
 "@emotion/is-prop-valid@^0.8.2":
   version "0.8.8"
   resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz#db28b1c4368a259b60a97311d6a952d4fd01ac1a"
@@ -261,6 +266,11 @@
   version "0.16.2"
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
   integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
+
+"@types/simple-icons@5.8.0":
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/@types/simple-icons/-/simple-icons-5.8.0.tgz#f21ae9af517a25cbfbd95ca2b812b9a93e2a66b9"
+  integrity sha512-2HeuJRjOhwCV6jnflcNtI68Xd9WKsVqVpgeokGz2buNyfuq0F0h/QDcPPZzNlK1OnL5zQfdd5jlG6f3ijkTHnw==
 
 "@typescript-eslint/parser@^5.42.0":
   version "5.43.0"
@@ -1795,6 +1805,13 @@ react-i18next@^11.11.4:
     "@babel/runtime" "^7.14.5"
     html-parse-stringify "^3.0.1"
 
+react-icon-cloud@4.1.4:
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/react-icon-cloud/-/react-icon-cloud-4.1.4.tgz#a6aa7a2d6f48a0eaacb091ca9fe830568a840c0e"
+  integrity sha512-hc8yGNU98V6ObPdeNIt75M016xGMxbTWqB4l6exo1uwE5bvFU095unMbX2K3YBKYhGKEV3c7fSmq3jD3cRWX+A==
+  dependencies:
+    "@csstools/convert-colors" "^2.0.0"
+
 react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -1930,6 +1947,11 @@ side-channel@^1.0.4:
     call-bind "^1.0.0"
     get-intrinsic "^1.0.2"
     object-inspect "^1.9.0"
+
+simple-icons@5.12.0:
+  version "5.12.0"
+  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-5.12.0.tgz#8f514005f1aef02464a014706cc8e5b07d4d72c8"
+  integrity sha512-iF5ZJuv/jPU2tdkc5aNXsirQg2kOggvcOUw2kMafCrelrr3Sj0ywRJkr+0uVniD1Kj6ayT1yb1IquBRHrYw10g==
 
 slash@^3.0.0:
   version "3.0.0"
