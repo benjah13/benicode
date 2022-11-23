@@ -109,12 +109,16 @@ const Skills = () => {
   return (
     <div className="w-full flex justify-center flex-col gap-2 p-8  -skew-y-3">
       <div className="skew-y-3 flex flex-col justify-center w-full">
-        <span className="w-100 text-center">Mes compétances</span>
+        <span className="w-100 text-center uppercase text-3xl font-extrabold text-blueHighlight">
+          Mes compétances
+        </span>
         <div className="w-full flex flex-row gap-2 p-8 justify-center items-center">
           <button
             className={classNames(
               "p-2 w-48 rounded-lg",
-              skills === SkillTypeEnum.BACKEND ? "bg-rose" : "bg-blue-500"
+              skills === SkillTypeEnum.BACKEND
+                ? "bg-blueHighlight text-white"
+                : "bg-blueHighlight/50"
             )}
             onClick={() => setSkills(SkillTypeEnum.BACKEND)}
           >
@@ -123,7 +127,9 @@ const Skills = () => {
           <button
             className={classNames(
               "p-2 w-48 rounded-lg",
-              skills === SkillTypeEnum.FRONTEND ? "bg-rose" : "bg-blue-500"
+              skills === SkillTypeEnum.FRONTEND
+                ? "bg-blueHighlight text-white"
+                : "bg-blueHighlight/50"
             )}
             onClick={() => setSkills(SkillTypeEnum.FRONTEND)}
           >
@@ -132,7 +138,9 @@ const Skills = () => {
           <button
             className={classNames(
               "p-2 w-48 rounded-lg",
-              skills === SkillTypeEnum.DEVOPS ? "!bg-rose" : "bg-blue-500"
+              skills === SkillTypeEnum.DEVOPS
+                ? "bg-blueHighlight text-white"
+                : "bg-blueHighlight/50"
             )}
             onClick={() => setSkills(SkillTypeEnum.DEVOPS)}
           >

@@ -13,6 +13,7 @@ module.exports = {
       },
       colors: {
         background: "#FFFFFF",
+        blueHighlight: "#1E90FF",
         header: "#FFFFFF",
         DEFAULT: "#1C1C1C",
         lightBlue: "#00A8E8",
@@ -23,6 +24,8 @@ module.exports = {
           red: "#F14C4C",
           grey: "#6C6C6C",
           green: "#5BB85B",
+          blueTag: "#508dbf",
+          greyTag: "#7e7e7e",
         },
       },
     },

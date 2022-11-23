@@ -27,21 +27,21 @@ export default function Posts() {
   return (
     <div className="bg-background w-full h-screen">
       <Header />
-      <div className="w-full h-full gap-8 pt-8 flex flex-col items-center font-bold text-white text-lg px-8">
+      <div className="w-full h-full gap-8 pt-8 flex flex-col items-center font-bold text text-lg px-8">
         {t("postPageDescription")}
-        <div className=" flex flex-row items-center justify-evenly">
+        <div className="flex flex-col md:flex-row items-center md:justify-evenly gap-4">
           {posts.map((post) => (
             <motion.div
               whileHover={{ scale: 1.05 }}
               key={post.title}
-              className="bg-white border w-1/3 border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
+              className="bg-white border w-full md:w-1/3 border-gray-200 rounded-lg shadow-md "
             >
               <a href={post.url}>
                 <img className="rounded-t-lg w-full" src={post.image} alt="" />
               </a>
               <div className="p-5">
                 <a href="#">
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text">
                     {post.title}
                   </h5>
                 </a>
